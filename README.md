@@ -66,3 +66,18 @@ mutation createBooks {
   }
 }
 ```
+
+## cURL example
+```shell
+curl -X POST -H "Content-type: application/json" http://localhost:8080/graphql -d '{"query": "{ bookById(id:\"1\") {id title pageCount author { id firstName lastName } } }"}'
+```
+
+## Links
+* https://graphql.org/code/#java-kotlin
+* https://www.graphql-java.com/
+* https://www.graphql-java-kickstart.com/tools/
+* https://www.howtographql.com/graphql-java
+* https://www.electronjs.org/apps/graphiql
+* https://www.maxivanov.io/make-graphql-requests-with-curl/
+* https://github.com/howtographql
+* https://github.com/penckert/spring-boot-graphql-demo
